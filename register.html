@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>中华微商联盟协会</title>
+    <meta name="description" content="中华微商联盟协会,微商资源">
+    <meta name="keywords" content="中华微商联盟协会,微商,微商联盟">
+    <meta name="author" content="中华微商联盟协会">
+    <meta name="application-name" content="weilb.net"><!--url-->
+    <!--site css-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="Font-Awesome-master/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/screen.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!--Favicons-->
+    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <script>
+        var _hmt = _hmt || [];
+    </script>
+</head>
+<body>
+<!-- start navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle collapsed " type="button" data-toggle="collapse"
+                    data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span><!--Responsive Nav span count-->
+
+            </button>
+            <a class="navbar-brand hidden-sm" href="index.html"
+               onClick="_hmt.push(['_trackEvent', 'navbar', 'click', 'navbar-首页'])">中华微商联盟协会</a>
+        </div>
+
+        <div class="navbar-collapse collapse" role="navigation">
+            <ul class="nav navbar-nav">
+                <li ><a href="intro-second.html"
+                        onClick="_hmt.push(['_trackEvent', 'navbar', 'click','intro'])">协会介绍</a>
+                </li>
+                <li><a href="news-second.html" onClick="_hmt.push(['_trackEvent', 'navbar', 'click','news'])">行业新闻</a>
+                </li>
+                <li><a href="canvass-second.html"
+                       onClick="_hmt.push(['_trackEvent','navbar','click','canvass'])">会员招募</a></li>
+                <li><a href="area-second.html" onClick="_hmt.push(['_trackEvent','navbar','click','area'])">会员企业</a>
+                </li>
+                <li><a href="apporve-second.html"
+                       onClick="_hmt.push(['_trackEvent','navbar','click','apporve'])">会员服务</a></li>
+                <li><a href="contact-second.html"
+                       onClick="_hmt.push(['_trackEvent','navbar','click','contact'])">会员交流</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="login.html" onclick="_hmt.push(['_trackEvent','navbar','click','login'])">登录</a></li>
+                <li><a href="register.html" onclick="_hmt.push(['_trackEvent','navbar','click','register'])">注册</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--end navigation -->
+<!-- start site's main content area -->
+<section>
+    <div class="container">
+        <div class="row login-box">
+            <img src="img/apple-touch-icon-precomposed.png" alt="中华微商联盟协会" title="中华微商联盟协会">
+            <h3>注册新用户</h3>
+            <form class="register-form" action="#" method="post" id="register_form">
+                <ul>
+                    <li class="alert alert-danger hide error_message text-left">
+                        <i class="icon icon-delete"></i> <em></em>
+                    </li>
+                    <li>
+                        <input class="aw-register-name form-control" type="text" name="user_name" placeholder="用户名" tips="请输入一个 2-14 位的用户名" errortips="用户名长度不符合" value="">
+                    </li>
+                    <li>
+                        <input class="aw-register-email form-control" type="text" placeholder="邮箱" name="email" tips="请输入你常用的电子邮箱作为你的账号" value="" errortips="邮箱格式不正确">
+                    </li>
+                    <li>
+                        <input class="aw-register-pwd form-control" type="password" name="password" placeholder="密码" tips="请输入 6-16 个字符,区分大小写" errortips="密码不符合规则">
+                    </li>
+
+                    <li class="last">
+                        <label><input type="checkbox" checked="checked" value="agree" name="agreement_chk"> 我同意</label> <a href="javascript:;" class="aw-agreement-btn">用户协议</a>
+                        <a href="login.html" class="pull-right">已有账号?</a>
+
+                    </li>
+                    <li class="clearfix">
+                        <button class="btn btn-large btn-blue btn-block btn-register" onclick="AWS.ajax_post($('#register_form'), AWS.ajax_processer, 'error_message'); return false;">注册</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</section>
+<footer class="copyright at-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <span>Copyright &copy; <a href="index.html">2015中华微商联盟协会</a></span> |
+                <span><a href="#" target="_blank">蜀ICP备15015344号-1</a></span> |
+                <span>蜀公网安备11010802014853</span>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

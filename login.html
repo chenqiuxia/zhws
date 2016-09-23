@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>中华微商联盟协会</title>
+    <meta name="description" content="中华微商联盟协会,微商资源">
+    <meta name="keywords" content="中华微商联盟协会,微商,微商联盟">
+    <meta name="author" content="中华微商联盟协会">
+    <meta name="application-name" content="weilb.net"><!--url-->
+    <!--site css-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="Font-Awesome-master/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/screen.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!--Favicons-->
+    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <script>
+        var _hmt = _hmt || [];
+    </script>
+</head>
+<body>
+<!-- start navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle collapsed " type="button" data-toggle="collapse"
+                    data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span><!--Responsive Nav span count-->
+
+            </button>
+            <a class="navbar-brand hidden-sm" href="index.html"
+               onClick="_hmt.push(['_trackEvent', 'navbar', 'click', 'navbar-首页'])">中华微商联盟协会</a>
+        </div>
+
+        <div class="navbar-collapse collapse" role="navigation">
+            <ul class="nav navbar-nav">
+                <li ><a href="intro-second.html"
+                                                   onClick="_hmt.push(['_trackEvent', 'navbar', 'click','intro'])">协会介绍</a>
+                </li>
+                <li><a href="news-second.html" onClick="_hmt.push(['_trackEvent', 'navbar', 'click','news'])">行业新闻</a>
+                </li>
+                <li><a href="canvass-second.html"
+                       onClick="_hmt.push(['_trackEvent','navbar','click','canvass'])">会员招募</a></li>
+                <li><a href="area-second.html" onClick="_hmt.push(['_trackEvent','navbar','click','area'])">会员企业</a>
+                </li>
+                <li><a href="apporve-second.html"
+                       onClick="_hmt.push(['_trackEvent','navbar','click','apporve'])">会员服务</a></li>
+                <li><a href="contact-second.html"
+                       onClick="_hmt.push(['_trackEvent','navbar','click','contact'])">会员交流</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="login.html" onclick="_hmt.push(['_trackEvent','navbar','click','login'])">登录</a></li>
+                <li><a href="register.html" onclick="_hmt.push(['_trackEvent','navbar','click','register'])">注册</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--end navigation -->
+<!-- start site's main content area -->
+<section>
+    <div class="container">
+        <div class="row login-box">
+            <div class="col-md-8">
+                <img src="img/apple-touch-icon-precomposed.png" alt="中华微商联盟协会" title="中华微商联盟协会">
+                <h3>中华微商联盟协会</h3>
+                <form id="login_form" method="post" onsubmit="return false"
+                      action="#">
+                    <input type="hidden" name="return_url" value="#"/>
+                    <ul>
+                        <li>
+                            <input type="text" id="aw-login-user-name" class="form-control" placeholder="邮箱 / 用户名"
+                                   name="user_name"/>
+                        </li>
+                        <li>
+                            <input type="password" id="aw-login-user-password" class="form-control" placeholder="密码"
+                                   name="password"/>
+                        </li>
+                        <li class="alert alert-danger hide error_message">
+                            <i class="icon icon-delete"></i> <em></em>
+                        </li>
+                        <li class="last">
+                            <a href="javascript:;"
+                               onclick="AWS.ajax_post($('#login_form'), AWS.ajax_processer, 'error_message');"
+                               id="login_submit" class="pull-right btn btn-large btn-primary">登录</a>
+                            <input id="login-radio" type="checkbox" value="1" name="net_auto_login"/>
+                            <label for="login-radio">记住我</label>
+                            <a href="find-password.html">忘记密码</a>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <div class="col-md-4">
+                <h3>第三方账号登录</h3>
+                <a href="#" class="btn btn-block btn-weixin"><i
+                        class="icon icon-weibo"></i> 微信登录</a>
+                <a href="#" class="btn btn-block btn-qq"> <i
+                        class="icon icon-qq"></i> QQ登录</a>
+                <a href="#" class="btn btn-block btn-weibo"><i
+                        class="icon icon-weibo"></i> 新浪微博登录</a>
+            </div>
+            <div class=" col-md-12 login-footer">
+                <span>还没有账号?</span>&nbsp;&nbsp;
+                <a href="register.html">立即注册</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+
+    </div>
+</section>
+<footer class="copyright at-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <span>Copyright &copy; <a href="index.html">2015中华微商联盟协会</a></span> |
+                <span><a href="#" target="_blank">蜀ICP备15015344号-1</a></span> |
+                <span>蜀公网安备11010802014853</span>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

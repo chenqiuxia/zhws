@@ -1,0 +1,152 @@
+/*====================================================
+	common styles
+====================================================*/
+*{ margin:0; padding: 0;}
+html,body { height: 100%;  color:#505050;line-height: 1.75em; background: #ebebeb;position: relative; font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif}
+a {  color: #0099CC;  outline: none;}
+a:hover {  color: #0099CC;  text-decoration: none;}
+a:active, a:focus, a img {  outline: none;}
+
+input[type="search"],
+input[type="text"],
+input[type="url"],
+input[type="email"],
+textarea {  padding: 7px 7px; border-radius: 2px;  -webkit-transition: all 0.2s;       -o-transition: all 0.2s;          transition: all 0.2s;  }
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="url"]:focus,
+input[type="email"]:focus,
+textarea:focus {  border: 1px solid #0099CC;  outline: none;}
+blockquote {  border-left: 4px solid #0099CC;}
+pre {  padding: 0;  background: none;  border: none;}
+::-moz-selection {  color: #ffffff;  background: #0099CC;  text-shadow: none;  }
+::selection {  color: #ffffff;  background: #0099CC;  text-shadow: none;  }
+/*====================================================
+	navbar
+====================================================*/
+@media (min-width:768px){
+  .navbar{min-height:50px}
+  .navbar-nav>li>a{font-size:14px}
+  .navbar-brand{padding-top:0;padding-bottom:0;line-height:50px;height:50px}
+}
+/*====================================================
+	header
+====================================================*/
+.bs-docs-header { margin-bottom: 40px; position: relative;  padding: 90px 0 40px; color: #cdbfe3;  text-align: center; background-image:url(../img/header.jpg); background-size:100%
+ }
+ @media (min-width: 768px){
+.bs-docs-header { padding-top: 110px; padding-bottom: 80px;}}
+/*====================================================
+	main content
+====================================================*/
+.main-content { margin-bottom: 35px;  position: relative;  overflow: hidden;  }
+.post {  padding: 35px;  background: #ffffff;  margin-bottom: 35px;  position: relative;  overflow: hidden;  }
+.post-head {  text-align: center;}
+.post-content {  margin: 30px 0; color: #444443; }
+.post-content p{ text-indent: 28px;}
+/*btn*/
+.btn-default { display: block; margin: 1em auto 0; width: 7em; padding: 7px 14px;  border-radius: 2px; border: 1px solid #0099CC;  background: #0099CC;  color: #ffffff;  -webkit-transition: all 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out;}
+.btn-default:hover {  border: 1px solid #303030;  background: #303030;  color: #ffffff;}
+.btn-default:focus {  outline: none;}
+.btn-default[disabled] {  border: 1px solid #303030;  background: #303030;  color: #ffffff;}
+/*pagination*/
+.pagination {  margin: 0 0 35px;  text-align: center;  display: block;  }
+.pagination a {  text-align: center;  display: inline-block;  color: #ffffff;  background: #0099CC;  border-radius: 2px;  }
+.pagination a a:hover {  background: #505050;  text-decoration: none;  color: #ffffff;  }
+.pagination a i {  width: 36px;  height: 36px;  line-height: 36px;  }
+.pagination .page-number {  background: #0099CC;  color: #ffffff;  margin: 0 3px;  display: inline-block;  line-height: 36px;  padding: 0 14px;  border-radius: 2px;  }
+/*widget common*/
+.widget{ margin-bottom: 35px; }
+.widget .title { padding-bottom: 7px;  border-bottom: 1px solid #ebebeb;margin-bottom: 2em;  position: relative;}
+.widget .title:after { content: "";  width: 90px;  height: 1px;  background: #0099CC;  position: absolute;  left: 0;  bottom: -1px;}
+.widget .recent-post .recent-single-post {  border-bottom: 1px dashed #ebebeb;  padding-bottom: 14px;  margin-bottom: 14px;}
+.widget .recent-post .recent-single-post:last-child {  margin-bottom: 0;}
+.widget .recent-post .recent-single-post .post-title {  color: #505050;  -webkit-transition: all 0.2s ease;   -o-transition: all 0.2s ease;          transition: all 0.2s ease;}
+.widget .recent-post .recent-single-post .post-title:hover {  color: #0099CC;  text-decoration: none;}
+.widget .recent-post .recent-single-post .date { color: #959595;}
+/*tag-cloud*/
+.tag-cloud a {  border: 1px solid #ebebeb; padding: 2px 7px; color: #666; line-height: 1.5em; display: inline-block;  margin: 0 7px 7px 0;
+    -webkit-transition: all 0.2s ease;  -o-transition: all 0.2s ease;  transition: all 0.2s ease;  }
+ .tag-cloud a:hover {  color: #ffffff;  background: #0099CC;  border: 1px solid #0099CC;  text-decoration: none;  }
+.tag-cloud hr{border-top: 1px dashed #303030;}
+/*sidebar*/
+@media (max-width: 991px) {
+    .sidebar .widget ul li{ margin-left:20%; }
+    .sidebar .widget ul .img-responsive{ margin-left: 0;}
+}
+.sidebar .widget {  background: #ffffff;  padding: 21px 30px;}
+.sidebar .widget ul li{ list-style: none; line-height: 28px;}
+.sidebar .widget ul li img{display: block; margin:0 auto; margin-top: 1em;}
+/*====================================================
+	main footer
+====================================================*/
+.main-footer {  background: #202020; padding: 35px 0 0; color: #959595}
+.main-footer .widget {  padding: 0 30px;}
+.main-footer .widget .title { color: #ffffff;  border-bottom: 1px solid #303030}
+.main-footer .widget .tag-cloud a {  border: 1px solid #303030}
+.main-footer .widget .tag-cloud a:hover {  border: 1px solid #0099CC}
+.main-footer .widget .friend-links a {  border: none}
+.main-footer .widget .friend-links a:hover {  border: none}
+.main-footer .widget .friend-links hr { margin: 1em 0; border-top: 1px dashed #303030}
+.main-footer .widget .recent-post .recent-single-post {  border-bottom: 1px dashed #303030}
+.main-footer .widget .recent-post .recent-single-post .post-title {  color: #959595}
+.main-footer .widget .recent-post .recent-single-post .post-title:hover {  color: #0099CC}
+.main-footer .widget .recent-post .recent-single-post .date {  color: #505050}
+/*====================================================
+	footer copyright
+====================================================*/
+.copyright { background: #111;  font-size: 13px;  text-align: center;  color: #555555;  padding-top: 28px; padding-bottom: 28px; border-top: 1px solid #303030}
+.copyright span { margin: 0 .5em}
+.copyright a { color: #555555;}
+.at-bottom{  position: absolute; bottom: 0; left: 0; width: 100%;}
+/*====================================================
+	back-to-top
+====================================================*/
+.back-to-top {  position: fixed;  right: 10px;  background:#0099CC;  color: #ffffff; text-align: center;  border-radius: 2px;  z-index: 1;  display: none}
+.back-to-top:hover {  background: #666}
+.back-to-top i {  width: 30px;  height: 30px;  line-height:30px;  font-size:30px}
+/*====================================================
+  intro-second
+====================================================*/
+.intro-tab{ display: block; margin: 0 auto;}
+/*====================================================
+	area-second
+====================================================*/
+.thumbnail {  display: block;  margin-left: auto;  margin-right: auto;  text-align: center;  max-width: 310px;  margin-bottom: 30px;  border-radius: 0}
+.thumbnail .caption a {color:#505050}
+.post-head{margin-bottom:30px; color:#303030;}
+.post-img{ display: block; margin: 0 auto;}
+/*====================================================
+	canvass-second
+====================================================*/
+.none-indent{ text-indent:0!important; font-size:24px;}
+/*====================================================
+	apporve-second
+====================================================*/
+.link a{ display: block; margin: 1em auto; width: 200px; border-color: #336699;  color:#369;}
+/*====================================================
+	login
+====================================================*/
+.login-box{ border: 1px solid #999; background: #fff;margin: 7em auto 5em; }
+.login-box img{ display: block; margin: 3em auto 1em; width: 95px;}
+.login-box h3{ text-align: center; font-size: 16px; margin-bottom: 2em; }
+.login-box form{ width: 80%; margin:0 auto;}
+.login-box ul{ margin-left:-2em;list-style: none;}
+.login-box ul li{ margin-bottom: 1em;}
+.last{ margin-top: 1.5em;}
+.last .btn-large{ width: 100px; margin-top: -0.5em;}
+.last label{ font-weight: normal; margin-top: -0.2em;}
+.last a{ margin-top: -0.2em; display: inline-block;}
+.login-box .col-md-4 h3{ margin-top: 2em; margin-bottom: 1em;}
+.login-box .col-md-4 a{ width: 170px; display: block; margin: 0 auto; position: relative; background-size: contain; color: transparent; margin-bottom: 0.5em;}
+.btn-weixin{ background: url("../img/weixin-login.png") no-repeat;}
+.btn-qq{ background: url("../img/qq-login.png") no-repeat;}
+.btn-weibo{ background: url("../img/weibo-login.png") no-repeat;}
+.login-footer{ margin: 2em 0 3em 0; text-align: center;}
+@media(min-width: 768px){
+  .login-box{width:714px;}
+  .login-box .col-md-4 h3{ margin-top: 7em; }
+  .login-box .col-md-4{ margin-left: -2.5em;}
+}
+.btn-register{ background: #09c;width: 300px; margin: 0 auto; color: #fff;}
+
